@@ -1,17 +1,22 @@
-def turn_on():
-    global switch_on
-    switch_on = True
-    
-def turn_off():
-    global switch_on
-    switch_on = False
+class LighSwitch():
+    def __init__(self):
+        self.switch_on = False
+        
+    def turn_on(self):
+        self.switch_on = True
+        
+    def tun_off(self):
+        self.switch_on = False
 
 
-switch_on = False;
 
-print(switch_on)
-turn_on()
-print(switch_on)
-turn_off()
-print(switch_on)
-turn_on()
+o_switch = LighSwitch()
+
+print(o_switch.switch_on)
+
+o_switch.turn_on()
+
+print(o_switch.switch_on)
+
+
+
